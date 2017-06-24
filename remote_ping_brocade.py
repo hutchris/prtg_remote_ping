@@ -1,8 +1,5 @@
-from netmiko import ConnectHandler
-from paepy.ChannelDefinition import CustomSensorResult
 from remote_ping import NetmikoSensor
 import sys
-import json
 
 class BrocadeSensor(NetmikoSensor):
     def ping(self):
