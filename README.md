@@ -27,7 +27,7 @@ They should now be visible in the settings when you are creating a new "Python S
 
 You need to have Linux credentials configured for the device and select "Transmit Linux Credentials" when creating the sensor.
 
-The remote ping details go in the "Additional Parameters" field. It uses a key-values to pass parameters to the script. Seperate key-value pairs with a comma and seperate the key-values with a colon (no unnecessary spaces). The ping value is the remote IP that the device will ping, it is (obviously) a required parameter. params is optional.
+The remote ping details go in the "Additional Parameters" field. It uses a key-value format to pass parameters to the script. Seperate key-value pairs with a comma and seperate the keys from the values with a colon (no unnecessary spaces). The ping value is the remote IP that the device will ping, it is (obviously) a required parameter. params is optional.
 
 ping:127.0.0.1,params:count 2
 
