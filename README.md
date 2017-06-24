@@ -31,4 +31,6 @@ The remote ping details go in the "Additional Parameters" field. It uses a key-v
 
 ping:127.0.0.1,params:count 2
 
+![alt tag](/Images/settingsexample.png)
+
 Let me know of any issues or if you would like a particular device model added. (needs netmiko support)
