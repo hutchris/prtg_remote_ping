@@ -1,5 +1,7 @@
 # prtg_remote_ping
-Scripts for remote pinging from various network device models
+Scripts for remote pinging from various network device models.
+
+Uses the netmiko library: https://github.com/ktbyers/netmiko
 
 This project is made so that prtg can monitor whether a device can ping an IP address. PRTG's built in SSH Remote Ping sensor is very good if your monitored device is a linux based OS.
 
