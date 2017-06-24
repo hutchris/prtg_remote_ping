@@ -30,6 +30,9 @@ You need to have Linux credentials configured for the device and select "Transmi
 The remote ping details go in the "Additional Parameters" field. It uses a key-value format to pass parameters to the script. Seperate key-value pairs with a comma and seperate the keys from the values with a colon (no unnecessary spaces). The ping value is the remote IP that the device will ping, it is (obviously) a required parameter. params is optional.
 
 Example settings:
+
+<img src="settingsexample.png" width="1370">
+
 ![Preview](settingsexample.png =1370x)
 
 Let me know of any issues or if you would like a particular device model added. (needs netmiko support)
