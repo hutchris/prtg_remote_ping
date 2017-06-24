@@ -31,8 +31,6 @@ The remote ping details go in the "Additional Parameters" field. It uses a key-v
 
 Example settings:
 
-<img src="settingsexample.png" width="1370">
-
-![Preview](settingsexample.png =1370x)
+<img src="settingsexample.png" width="600">
 
 Let me know of any issues or if you would like a particular device model added. (needs netmiko support)
