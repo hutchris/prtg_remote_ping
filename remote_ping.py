@@ -62,3 +62,9 @@ class NetmikoSensor(CustomSensorResult):
                 if maxAttempts == 1:
                     self.writeError("Device connected but send command failed. {e}".format(e=str(err)))
         return(output)
+        
+    def ping(self):
+        if "params" not in self.arguments.keys():
+            self.arguments['params'] = ""
+        pingOutput = self.sendCommand(cmdStr="ping {ping} {params}".format(ping=self.arguments['ping'],params=self.arguments['params']))
+        return(pingOutput)

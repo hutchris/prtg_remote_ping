@@ -1,12 +1,12 @@
 from remote_ping import NetmikoSensor
 import sys
 
-class BrocadeSensor(NetmikoSensor):  
+class CiscoSensor(NetmikoSensor):
     def parsePing(self,rawPing):
-        if "bytes from" in rawPing:
+        if "!" in rawPing:
             try:
                 pingOutputLines = rawPing.split("\n")
-                stats = [line for line in pingOutputLines if "min/avg/max/mdev" in line][0].strip().split(" ")[-2].split("/")
+                stats = [line for line in pingOutputLines if "min/avg/max" in line][0].strip().split(" ")[-2].split("/")
                 results = {
                     "Minumum Response":float(stats[0]),
                     "Average Response":float(stats[1]),
@@ -20,7 +20,7 @@ class BrocadeSensor(NetmikoSensor):
 
 if __name__ == "__main__":
     try:
-        sensor = BrocadeSensor(deviceType="brocade_nos")
+        sensor = CiscoSensor(deviceType="cisco_ios")
         sensor.parseArgs(sys.argv[1])
         sensor.connectDevice()
         pingOutput = sensor.ping()
